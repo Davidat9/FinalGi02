@@ -37,12 +37,12 @@ state = states.idle;
 
 //ABILITIES
 hp = 3;
-spd = 4;
+spd = 9;
 grav = 1;
 moveX = 0;
 moveY = 0;
 attackCount = 0;
-jumpMax = 2;
+jumpMax = 39;
 jumpCount = 0;
 </string>
           </argument>
@@ -91,7 +91,7 @@ moveX = spd * move;
 
     
 //GRAVITY
-if (!place_meeting(x, y + 1, solid)) {
+if (!place_meeting(x, y + 1,solid)) {
     moveY += grav;
     if (moveY &gt; 9) {
         moveY = 9;
@@ -99,7 +99,7 @@ if (!place_meeting(x, y + 1, solid)) {
 }
 
 if (place_meeting(x, y + moveY, solid)) {
-    while (!place_meeting(x, y + sign(moveY), solid)) {
+    while (!place_meeting(x, y + sign(moveY),solid)) {
         y += sign(moveY);
     }
     
@@ -108,7 +108,7 @@ if (place_meeting(x, y + moveY, solid)) {
 }
 
 if (place_meeting(x + moveX, y - 2, solid)) {
-    while (!place_meeting(x + sign(moveX), y - 2, solid)) {
+    while (!place_meeting(x + sign(moveX), y - 2,solid)) {
         x += sign(moveX);
     }
 }

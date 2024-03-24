@@ -9,7 +9,6 @@
     <sprite>sprites\s1_idle</sprite>
     <sprite>sprites\s1_defend</sprite>
     <sprite>sprites\s1_run_right</sprite>
-    <sprite>sprites\s1_run_left</sprite>
     <sprite>sprites\s1_heal</sprite>
     <sprite>sprites\s1_damage</sprite>
     <sprite>sprites\s1_jump</sprite>
@@ -17,6 +16,7 @@
     <sprite>sprites\s1_atack</sprite>
     <sprite>sprites\solid_blokc</sprite>
     <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\flame_sprit_bullet</sprite>
     <sprite>sprites\flame_sprit</sprite>
   </sprites>
   <backgrounds name="background">
@@ -35,8 +35,10 @@
   </scripts>
   <objects name="objects">
     <object>objects\player</object>
-    <object>objects\solid__block</object>
+    <object>objects\solid</object>
     <object>objects\damage</object>
+    <object>objects\living_fire</object>
+    <object>objects\bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
