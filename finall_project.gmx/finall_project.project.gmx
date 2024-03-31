@@ -18,12 +18,14 @@
     <sprite>sprites\sprite10</sprite>
     <sprite>sprites\flame_sprit_bullet</sprite>
     <sprite>sprites\flame_sprit</sprite>
+    <sprite>sprites\me_block</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
     <background>background\background1</background>
     <background>background\background2</background>
     <background>background\background3</background>
+    <background>background\background4</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -39,6 +41,7 @@
     <object>objects\damage</object>
     <object>objects\living_fire</object>
     <object>objects\bullet</object>
+    <object>objects\blocker</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
