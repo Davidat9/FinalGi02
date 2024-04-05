@@ -19,6 +19,9 @@
     <sprite>sprites\flame_sprit_bullet</sprite>
     <sprite>sprites\flame_sprit</sprite>
     <sprite>sprites\me_block</sprite>
+    <sprite>sprites\exit_block</sprite>
+    <sprite>sprites\name_tag</sprite>
+    <sprite>sprites\name_tag_2</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -42,9 +45,14 @@
     <object>objects\living_fire</object>
     <object>objects\bullet</object>
     <object>objects\blocker</object>
+    <object>objects\exit_door</object>
+    <object>objects\name_of_room</object>
+    <object>objects\name_of_room_2</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
