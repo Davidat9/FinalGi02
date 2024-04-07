@@ -1,10 +1,10 @@
 scr_input();
 
-sprite_index = s1_jump;
+sprite_index = s_jump;
 
-if (place_meeting(x , y + moveY, solid)) {
+if (place_meeting(x , y + moveY, o_solid)) {
     repeat(abs(moveY)) {
-        if (!place_meeting(x, y + sign(moveY), solid)) {
+        if (!place_meeting(x, y + sign(moveY), o_solid)) {
             y += sign(moveY);
         }
         

@@ -1,6 +1,6 @@
 scr_input();
 
-sprite_index = s1_run_right;
+sprite_index = s_run;
 
 moveX = (pressD - pressA) * spd;
 
@@ -9,7 +9,7 @@ if (pressD + pressA == 0) {
 }
 
 if (pressW and jumpCount < jumpMax) {
-    moveY = -10;
+    moveY = -20;
     jumpCount++;
 }
 

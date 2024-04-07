@@ -6,29 +6,30 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s1_idle</sprite>
-    <sprite>sprites\s1_defend</sprite>
-    <sprite>sprites\s1_run_right</sprite>
-    <sprite>sprites\s1_heal</sprite>
-    <sprite>sprites\s1_damage</sprite>
-    <sprite>sprites\s1_jump</sprite>
-    <sprite>sprites\s1_roll</sprite>
-    <sprite>sprites\s1_atack</sprite>
-    <sprite>sprites\solid_blokc</sprite>
-    <sprite>sprites\sprite10</sprite>
-    <sprite>sprites\flame_sprit_bullet</sprite>
-    <sprite>sprites\flame_sprit</sprite>
-    <sprite>sprites\me_block</sprite>
-    <sprite>sprites\exit_block</sprite>
-    <sprite>sprites\name_tag</sprite>
-    <sprite>sprites\name_tag_2</sprite>
+    <sprites name="characters">
+      <sprites name="player">
+        <sprite>sprites\s_idle</sprite>
+        <sprite>sprites\s_jump</sprite>
+        <sprite>sprites\s_run</sprite>
+        <sprite>sprites\s_attack</sprite>
+      </sprites>
+      <sprite>sprites\s_enemy</sprite>
+    </sprites>
+    <sprites name="others">
+      <sprite>sprites\s_bullet</sprite>
+      <sprite>sprites\s_lose</sprite>
+      <sprite>sprites\s_win</sprite>
+      <sprite>sprites\s_next</sprite>
+      <sprite>sprites\s_damage</sprite>
+      <sprite>sprites\s_solid</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\background0</background>
-    <background>background\background1</background>
-    <background>background\background2</background>
-    <background>background\background3</background>
-    <background>background\background4</background>
+    <background>background\bg_1</background>
+    <background>background\bg_2</background>
+    <background>background\bg_3</background>
+    <background>background\bg_4</background>
+    <background>background\til_main</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -39,20 +40,24 @@
     <script>scripts\scr_attack.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\player</object>
-    <object>objects\solid</object>
-    <object>objects\damage</object>
-    <object>objects\living_fire</object>
-    <object>objects\bullet</object>
-    <object>objects\blocker</object>
-    <object>objects\exit_door</object>
-    <object>objects\name_of_room</object>
-    <object>objects\name_of_room_2</object>
+    <objects name="characters">
+      <object>objects\o_player</object>
+      <object>objects\o_enemy</object>
+    </objects>
+    <objects name="others">
+      <object>objects\o_next</object>
+      <object>objects\o_damage</object>
+      <object>objects\o_solid</object>
+      <object>objects\o_bullet</object>
+      <object>objects\o_win</object>
+      <object>objects\o_lose</object>
+      <object>objects\o_checkpoint</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\room1</room>
-    <room>rooms\room2</room>
+    <room>rooms\r_play_1</room>
+    <room>rooms\r_play_2</room>
+    <room>rooms\r_lose</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
