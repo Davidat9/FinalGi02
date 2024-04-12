@@ -41,7 +41,7 @@ grav = 1;
 moveX = 0;
 moveY = 0;
 attackCount = 0;
-jumpMax = 1;
+jumpMax = 6;
 jumpCount = 0;
 isDamage = false;
 </string>
@@ -150,7 +150,7 @@ if (place_meeting(x, y, o_next)) {
     if (instance_number(o_enemy) == 0) {
          room_goto_next();
     } else {
-        show_message("You have to kill all of enemies");
+        show_message("You have to kill all enemies");
         x = 64;
         y = 64;
     }   
@@ -314,12 +314,12 @@ draw_healthbar(x - 30, y - 70, x + 30, y - 80, global.hp/global.hpmax * 100, c_r
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
-  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
-  <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
+  <PhysicsObjectDensity>0,5</PhysicsObjectDensity>
+  <PhysicsObjectRestitution>0,100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
-  <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
-  <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
-  <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
+  <PhysicsObjectLinearDamping>0,100000001490116</PhysicsObjectLinearDamping>
+  <PhysicsObjectAngularDamping>0,100000001490116</PhysicsObjectAngularDamping>
+  <PhysicsObjectFriction>0,200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
   <PhysicsShapePoints/>

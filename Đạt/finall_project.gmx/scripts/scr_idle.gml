@@ -8,7 +8,7 @@ if (pressA or pressD) {
 } else if (pressSpace) {
     state = states.attack;
 } else if (pressW and jumpCount < jumpMax) {
-    moveY = -20;
+    moveY = -10;
     jumpCount++;
 }
 

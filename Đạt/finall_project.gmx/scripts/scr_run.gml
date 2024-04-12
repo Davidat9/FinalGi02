@@ -10,7 +10,7 @@ if (pressD + pressA == 0) {
 }
 
 if (pressW and jumpCount < jumpMax) {
-    moveY = -20;
+    moveY = -10;
     jumpCount++;
 }
 
